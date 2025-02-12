@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Result Portal</title>
+</head>
+<body>
+    <div class="maincontainer" id="container">
+        <div class="container">
+            <div class="container_box">
+                <input type="text" name="name" id="name" placeholder="Enter your Full Name">
+                <label for="name"> Student's Name</label>
+                <input type="date" name="dob" id="dob" placeholder="Date of Birth">
+                <label for="dob">Date of Birth</label>
+                <input type="number" name="number" id="number" placeholder="Enter your Contact No.">
+                <label for="number">Contact No.</label>
+                <input type="number" name="obtained_marks" required placeholder="Enter your Obatained Marks" id="obtained_marks">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+                <label for="obtained_marks">Obtainer Marks</label>
+            </div>
+            <div class="circle_marks">
+                <h2>Student Grade</h2>
+              <center>
+                <label for="">A+</label>
+                <label for="">A</label>
+                <label for="">B</label>
+                <label for="">C</label>
+                <label for="">D</label>
+                <label for="">fail</label>
+              </center>
+            </div>        
+        </div>
+        <div class="btns">
+            <button id="searchbtn" onclick="obatainedsearch()">Search</button>
+            <button onclick="calculator()">Calculator</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <div class="calculator_box" id="calculator_box">
+        <div class="icon_close">
+            <i class="fa fa-close" onclick="closewin()"></i>
+        </div>
+        <div class="calculator_container">
+            <input type="text" name="cal" id="cal" placeholder="0">
+            <div>
+                <button class="operator">AC</button>
+                <button class="operator">C</button>
+                <button class="operator">%</button>
+                <button class="operator">/</button>
+            </div>
+    
+            <div>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button class="operator">X</button>
+            </div>
+    
+            <div>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button class="operator">-</button>
+            </div>
+    
+            <div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button class="operator">+</button>
+            </div>
+    
+            <div>
+                <button>00</button>
+                <button>0</button>
+                <button>.</button>
+                <button class="operator">=</button>
+            </div>
+        </div>
+    </div>
+
+
+    
+    
+    <script src="main.js"></script>
+    
+</body>
+</html>
